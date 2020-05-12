@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,p=1,m=2,i=1;
+    cin >> n;
+    while(1)
+    {
+        int p1 = p*i;
+        int m1= m*i;
+        if(n-p1<0 && n!=0)
+        {
+            cout << "Patlu" << endl;
+            break;
+        }
+        else
+        {
+            n -=p1;
+        }
+         if( n-m1<0 && n!=0)
+        {
+            cout << "Motu" <<endl;
+            break;
+        }
+        else
+        {
+            n -=m1;
+        }
+        i++;
+    }
+    return 0;
+}
